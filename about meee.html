@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About Me</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+  <style>
+    :root {
+      --gradient: linear-gradient(135deg, #D291FF, #8AAAE5);
+      --text-dark: #333;
+      --soft-purple: #ffffff;
+    }
+
+    .navbar,
+    .footer {
+      background: var(--gradient);
+    }
+
+    .hero-section {
+      background: var(--gradient);
+      color: white;
+      padding: 100px 0;
+      text-align: center;
+    }
+
+    .rounded-circle {
+      transition: transform 0.3s ease;
+    }
+
+    .rounded-circle:hover {
+      transform: scale(1.1);
+    }
+
+    .section-title {
+      font-size: 2rem;
+      font-weight: 600;
+      color: var(--text-dark);
+    }
+
+    .list-group-item {
+      background: transparent;
+      border: none;
+      padding-left: 0;
+    }
+
+    .nav-link.active {
+      font-weight: 600;
+      border-bottom: 2px solid white;
+    }
+
+    .highlight {
+      color: var(--soft-purple);
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark shadow-sm sticky-top">
+    <div class="container">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link active" href="about meee.html">About Me</a></li>
+          <li class="nav-item"><a class="nav-link" href="portofolio.html">Portfolio</a></li>
+          <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="container">
+      <h1 class="display-4 fw-bold">About Me</h1>
+      <p class="lead">Allo, i'm <span class="highlight">Elena Oktaviani</span> — a Web Developer & UI/UX Designer who loves creating beautiful and functional designs. 💻✨</p>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <main class="container my-5">
+    <div class="row align-items-center mt-4">
+      <div class="col-md-4 text-center mb-4">
+        <img src="elena.jpg" alt="Elena Oktaviani" class="rounded-circle img-fluid shadow" />
+      </div>
+      <div class="col-md-8">
+        <p>I have a background in Information Technology and experience developing various digital projects. The combination of logic and aesthetics is what I like in the world of technology.</p>
+
+        <div class="mb-4">
+          <h2 class="section-title">Skill</h2>
+          <ul class="list-group">
+            <li class="list-group-item"><i class="bi bi-code-slash me-2 text-primary"></i>HTML, CSS, JavaScript</li>
+            <li class="list-group-item"><i class="bi bi-bootstrap-fill me-2 text-primary"></i>Bootstrap, React, Vue.js</li>
+            <li class="list-group-item"><i class="bi bi-vector-pen me-2 text-primary"></i>UI/UX Design (Figma, Adobe XD)</li>
+            <li class="list-group-item"><i class="bi bi-hdd-network me-2 text-primary"></i>Node.js & Express (Basic)</li>
+          </ul>
+        </div>
+
+        <div class="mb-4">
+          <h2 class="section-title">Education</h2>
+          <p>S1 Ilmu Komputer, Universitas Lampung (2023 - 2027)</p>
+        </div>
+
+        <div class="mb-4">
+          <h2 class="section-title">Work Experience</h2>
+          <ul class="list-group">
+            <li class="list-group-item"><i class="bi bi-briefcase-fill me-2 text-primary"></i>Web Developer di PT Mencari Cinta Sejati (2027 - sekarang)</li>
+            <li class="list-group-item"><i class="bi bi-person-workspace me-2 text-primary"></i>Freelance UI/UX Designer (2025 - sekarang)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer text-white text-center py-4 mt-5">
+    <div class="container">
+      <p class="mb-1">&copy; 2024 Elena Oktaviani. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
